@@ -19,6 +19,9 @@ kubectl cp $content_file $pod:/content.tgz
 echo "\nUploading $db_file to $pod:"
 kubectl cp $db_file $pod:/db.sql
 
+echo "\nCopying s3-uploads to wordpress installation:"
+kubectl cp ./libs/S3-Uploads $pod:/S3-Uploads
+
 # Executing pod script
 echo "\nExecuting POD script..."
 kubectl cp pod_script.sh $pod:/pod_script.sh
