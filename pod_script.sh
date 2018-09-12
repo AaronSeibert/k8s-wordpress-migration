@@ -8,6 +8,7 @@ mysql -u$WORDPRESS_DATABASE_USER -p$WORDPRESS_DATABASE_PASSWORD -h $MARIADB_HOST
 
 echo "Restoring wp-content..."
 tar zxvf /content.tgz -C $content_dir
+chown -R bitnami:daemon /bitnami/wordpress/wp-content
 
 
 echo "\nCleaning Up..."
