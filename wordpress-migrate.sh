@@ -26,4 +26,4 @@ kubectl exec $pod -ti -- /pod_script.sh
 
 # Clean Up
 echo "\nCleaning up local files..."
-rm $content_file $db_file pod_script.sh
+rm $content_file $db_file
