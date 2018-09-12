@@ -1,0 +1,4 @@
+[submodule "libs/S3-Uploads"]
+	path = libs/S3-Uploads
+	url = https://github.com/humanmade/S3-Uploads.git
+	branch = master
